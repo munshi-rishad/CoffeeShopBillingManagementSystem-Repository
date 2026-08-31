@@ -1,4 +1,4 @@
-# CoffeeShopBillingManagementSystem-Repository
+# CoffeeShopBillingManagementSystem
 
 This is a Java-based Coffee Shop Billing Management System. It is developed using Java Swing for managing coffee orders, calculating prices, and handling payments.
 
