@@ -43,4 +43,4 @@ Once the application is running, users can register or log in, select coffee and
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/munshi-rishad/CoffeeShopBillingManagementSystem-Repository.git
+   git clone https://github.com/munshi-rishad/Java-CoffeeShopBillingManagementSystem-Repository.git
