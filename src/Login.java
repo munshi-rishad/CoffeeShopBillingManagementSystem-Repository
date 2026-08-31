@@ -22,7 +22,7 @@ public class Login extends JFrame implements ActionListener {
             @Override
             protected void paintComponent(Graphics g) {
                 super.paintComponent(g);
-                ImageIcon imageIcon = new ImageIcon("08.png");
+                ImageIcon imageIcon = new ImageIcon("assets/backgrounds/login_background.png");
                 Image img = imageIcon.getImage();
                 g.drawImage(img, 0, 0, this.getWidth(), this.getHeight(), this);
                 

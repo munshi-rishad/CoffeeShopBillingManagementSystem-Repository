@@ -35,7 +35,7 @@ public class FrameIntro extends JFrame implements MouseListener, ActionListener 
 		JPanel panel = new JPanel()
 		{
 			public void paintComponent(Graphics g) {
-				Image backgroundImage = new ImageIcon("rafiq.png").getImage();
+				Image backgroundImage = new ImageIcon("assets/backgrounds/coffee_order_background.png").getImage();
 				super.paintComponent(g);
 				g.drawImage(backgroundImage, 0, 0, getWidth(), getHeight(), this);
 			}
@@ -240,7 +240,7 @@ public class FrameIntro extends JFrame implements MouseListener, ActionListener 
         double brewPrice = 0.0;
 
 		switch (selectedBase) {
-		case "Water 5.00Tk":
+		case "Water 0.00Tk":
 		basePrice = 0.00 ;
 		break;
 		case "Milk 15.00 Tk":

@@ -36,7 +36,7 @@ public class Register extends JFrame implements /*MouseListener,*/ ActionListene
             @Override
             public void paintComponent(Graphics g) {
                 super.paintComponent(g);
-                ImageIcon backgroundImage = new ImageIcon("02.png");
+                ImageIcon backgroundImage = new ImageIcon("assets/backgrounds/registration_background.png");
                 Image image = backgroundImage.getImage();
                 g.drawImage(image, 0, 0, this.getWidth(), this.getHeight(), this);
                 

@@ -19,11 +19,11 @@ public class PaymentMathod extends JFrame implements ActionListener, MouseListen
 		this.setBounds(600,200,800,500);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-		ImageIcon i1=new ImageIcon("bkash.png");
-		ImageIcon i2=new ImageIcon("card.png");
-		ImageIcon i3=new ImageIcon("location.png");
-		ImageIcon i4=new ImageIcon("back.png");
-		Image backgroundImage=new ImageIcon("3.png").getImage();
+		ImageIcon i1=new ImageIcon("assets/icons/bkash_icon.png");
+		ImageIcon i2=new ImageIcon("assets/icons/card_icon.png");
+		ImageIcon i3=new ImageIcon("assets/icons/location_icon.png");
+		ImageIcon i4=new ImageIcon("assets/icons/back_icon.png");
+		Image backgroundImage=new ImageIcon("assets/backgrounds/payment_background.png").getImage();
 
 		panel=new JPanel()
 		{
@@ -370,8 +370,10 @@ public class PaymentMathod extends JFrame implements ActionListener, MouseListen
                 	} 
 					else 
 					{
-                    	JOptionPane.showConfirmDialog(null, "Do you want to confirm order?", "Confirm!!", JOptionPane.OK_CANCEL_OPTION);
-						System.exit(0);
+                    	int result = JOptionPane.showConfirmDialog(null, "Do you want to confirm order?", "Confirm!!", JOptionPane.OK_CANCEL_OPTION);
+						if (result == JOptionPane.OK_OPTION) {
+							System.exit(0);
+						}
                 	}
             	} 
 				else if(card.isSelected()) 
@@ -383,8 +385,10 @@ public class PaymentMathod extends JFrame implements ActionListener, MouseListen
                 	} 
 					else 
 					{
-                    	JOptionPane.showConfirmDialog(null, "Do you want to confirm order?", "Confirm!!", JOptionPane.OK_CANCEL_OPTION);
-						System.exit(0);
+                    	int result = JOptionPane.showConfirmDialog(null, "Do you want to confirm order?", "Confirm!!", JOptionPane.OK_CANCEL_OPTION);
+						if (result == JOptionPane.OK_OPTION) {
+							System.exit(0);
+						}
                 	}
             	} 
 				else if(cash.isSelected()) 
@@ -392,12 +396,15 @@ public class PaymentMathod extends JFrame implements ActionListener, MouseListen
 					if(location.isEmpty()) 
 					{
                     	JOptionPane.showMessageDialog(null, "Please fill in all the fields for Location", "Error", JOptionPane.ERROR_MESSAGE);
-						enableCardFields();
+						locationLabel.setEnabled(true);
+						locationField.setEnabled(true);
                 	}
 					else
 					{
-                		JOptionPane.showConfirmDialog(null, "Do you want to confirm order?", "Confirm!!", JOptionPane.OK_CANCEL_OPTION);
-						System.exit(0);
+                		int result = JOptionPane.showConfirmDialog(null, "Do you want to confirm order?", "Confirm!!", JOptionPane.OK_CANCEL_OPTION);
+						if (result == JOptionPane.OK_OPTION) {
+							System.exit(0);
+						}
 					}	
             	}
         	}
